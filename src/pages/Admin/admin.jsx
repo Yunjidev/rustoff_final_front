@@ -21,7 +21,7 @@ const DashboardComponent = () => {
   const [loading, setLoading] = useState(true);
 
   // const API_URL = `${import.meta.env.VITE_BASE_URL}/api/v1`;
-  
+  import { API_URL } from '../../stores/apiUrl';
 
   const fetchData = async () => {
     try {
