@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 
 
 const API = axios.create({
-  baseURL: 'https://rustoffback-d3677a58098b.herokuapp.com'
+  baseURL: 'https://rustoff-final-app-e6752fce9f21.herokuapp.com/'
 });
 
 API.interceptors.request.use(({ headers, ...config }) => ({
