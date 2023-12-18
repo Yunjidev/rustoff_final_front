@@ -6,8 +6,8 @@ import { FaFileCircleXmark } from "react-icons/fa6";
 import { TbFileEuro } from "react-icons/tb";
 import { FaImages } from "react-icons/fa";
 
-// import { API_URL } from '../../stores/apiUrl';
-import { API_URL } from '../../stores/apiUrl';
+import { API_URL } from '../../services/axios-config';
+
 
 const DashboardComponent = () => {
   const [numUsers, setNumUsers] = useState(0);
@@ -21,8 +21,6 @@ const DashboardComponent = () => {
   const [loading, setLoading] = useState(true);
 
   // const API_URL = `${import.meta.env.VITE_BASE_URL}/api/v1`;
-  import { API_URL } from '../../stores/apiUrl';
-
   const fetchData = async () => {
     try {
       const [userStats, quoteStats, processedCount, unprocessedCount, orderStats, itemStats, recentOrdersData, usersData] = await Promise.all([
